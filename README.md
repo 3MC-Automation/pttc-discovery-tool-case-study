@@ -2,7 +2,7 @@
 
 ## Overview
 
-The PTTC Discovery Tool is a guided intake and recommendation workflow designed to help substance misuse prevention professionals identify relevant evidence-based prevention programs based on risk factors, developmental timing, and prevention type.
+The PTTC Discovery Tool is a guided intake and recommendation workflow designed to help substance misuse prevention professionals identify relevant evidence-based prevention programs based on risk factor domain, specific risk factor needs, and focus population.
 
 This case study documents my product ownership work for a prevention technology initiative connected to the SAMHSA-funded Prevention Technology Transfer Center Network. My work focused on intake flow design, MVP scope control, requirements definition, acceptance criteria, and developer-ready implementation planning.
 
@@ -70,12 +70,13 @@ The product was designed to:
 
 ## 🛠️ MVP Scope
 
-The MVP focused on a guided intake flow and recommendation logic based on:
+The MVP focused on a 3-step guided intake flow and recommendation logic based on:
 
 • Risk Factor Domain  
-• Priority Risk Factors  
-• Developmental Timing  
-• Prevention Type  
+• Risk Factor  
+• Focus Population  
+
+Additional spreadsheet fields were used behind the scenes to support recommendation logic and improve output relevance without requiring users to manually filter every available program attribute.
 
 The goal was not to overbuild the first version. The MVP needed to prove the intake logic, user flow, and recommendation structure before expanding into more advanced features.
 
@@ -97,15 +98,19 @@ Future enhancements may include:
 
 Instead of building a generic search form, the intake was designed around how prevention professionals think about program fit.
 
-### 2. Separate MVP needs from future enhancements
+### 2. Keep the user-facing intake lightweight
+
+The MVP used a 3-step intake so users could provide the highest-value decision inputs without being overwhelmed by every available spreadsheet field.
+
+### 3. Separate MVP needs from future enhancements
 
 Advanced recommendation features were intentionally deferred so the first build could stay focused, usable, and budget-conscious.
 
-### 3. Prioritize developer-ready requirements
+### 4. Prioritize developer-ready requirements
 
 Each product decision needed to be translated into clear requirements, acceptance criteria, and implementation guidance to reduce ambiguity during the build.
 
-### 4. Protect user clarity
+### 5. Protect user clarity
 
 The workflow needed to guide users through complex prevention concepts without overwhelming them.
 
