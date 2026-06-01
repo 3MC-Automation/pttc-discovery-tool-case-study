@@ -115,13 +115,9 @@ This repository is a public portfolio case study and does not include private cl
 
 Current documentation structure:
 
-• `/docs/product-brief.md`  
-• `/docs/business-problem.md`  
+• `README.md`  
 • `/docs/requirements.md`  
 • `/docs/acceptance-criteria.md`  
-• `/docs/roadmap.md`  
-• `/docs/user-flow.md`  
-• `/assets/screenshots/`  
 • `/assets/diagrams/`  
 
 ## ✅ Outcome
