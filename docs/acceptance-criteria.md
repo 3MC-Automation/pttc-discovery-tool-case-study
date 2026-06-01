@@ -2,19 +2,20 @@
 
 ## Purpose
 
-This document defines acceptance criteria for the refined PTTC Discovery Tool MVP.
+This document defines acceptance criteria for the approved PTTC Discovery Tool MVP.
 
-The initial intake concept was built to help a non-technical stakeholder group visualize what a guided program discovery tool could do. After that early concept created alignment, the intake flow was refined into a clearer MVP structure based on prevention logic, usability needs, and technical feasibility.
+The initial intake concept was built to help a non-technical stakeholder group visualize what a guided program discovery tool could do. After stakeholder review and refinement, the approved MVP evolved into a 3-step intake workflow focused on Risk Factor Domain, Risk Factor, and Focus Population.
 
 ## MVP Intake Flow
 
-The refined MVP intake flow includes:
+The approved MVP intake flow includes:
 
 1. Risk Factor Domain  
-2. Priority Risk Factors  
-3. Developmental Timing  
-4. Prevention Type  
-5. Recommendation Results  
+2. Risk Factor  
+3. Focus Population  
+4. Recommendation Results  
+
+Additional spreadsheet fields support recommendation logic behind the scenes and are not required user inputs.
 
 ---
 
@@ -22,7 +23,7 @@ The refined MVP intake flow includes:
 
 ### Business Goal
 
-Help users start with a broad prevention context before selecting more specific priority risk factors.
+Help users start with a broad prevention context before selecting a specific prevention need.
 
 ### Acceptance Criteria
 
@@ -30,62 +31,44 @@ Help users start with a broad prevention context before selecting more specific 
 • User can select one risk factor domain.  
 • Supported domains include Community, Family, School, Individual, and Peer.  
 • User cannot continue without selecting a domain.  
-• Selected domain controls which priority risk factors appear in the next step.  
+• Selected domain controls which risk factors appear in the next step.  
 • User can go back and change the selected domain before completing intake.  
 
 ---
 
-## 2. Priority Risk Factor Selection
+## 2. Risk Factor Selection
 
 ### Business Goal
 
-Help users identify the specific risk factors most relevant to their prevention planning needs without overwhelming them.
+Help users identify the specific prevention need they want to address.
 
 ### Acceptance Criteria
 
-• User sees only the priority risk factors associated with the selected domain.  
-• User can select up to three priority risk factors.  
-• User cannot select more than three priority risk factors.  
-• User can deselect a selected risk factor.  
-• User cannot continue without selecting at least one priority risk factor.  
-• If user changes the risk factor domain, previously selected priority risk factors are cleared or revalidated.  
-• The interface clearly communicates the selection limit.  
+• User sees only risk factor options associated with the selected domain.  
+• User can select a risk factor.  
+• User cannot continue without selecting a risk factor.  
+• If user changes the risk factor domain, previously selected risk factors are cleared or revalidated.  
+• The interface clearly communicates available options.  
 
 ---
 
-## 3. Developmental Timing Selection
+## 3. Focus Population Selection
 
 ### Business Goal
 
-Help users narrow program recommendations based on the developmental timing or age range most relevant to their prevention context.
+Help users identify the population they are trying to support so recommendations better match implementation needs.
 
 ### Acceptance Criteria
 
-• User can view available developmental timing options.  
-• User can select the developmental timing option that best matches the population or planning context.  
-• User cannot continue without selecting a developmental timing option.  
-• The selected timing value is included in recommendation logic.  
+• User can view available focus population options.  
+• User can select a focus population.  
+• User cannot continue without selecting a focus population.  
+• The selected population value is included in recommendation logic.  
 • User can go back and update the selection before viewing results.  
 
 ---
 
-## 4. Prevention Type Selection
-
-### Business Goal
-
-Help users clarify the type of prevention approach they are seeking so recommendations better match their intended intervention strategy.
-
-### Acceptance Criteria
-
-• User can view available prevention type options.  
-• User can select the prevention type that best matches their needs.  
-• User cannot continue without selecting a prevention type.  
-• The selected prevention type is included in recommendation logic.  
-• User can go back and update the selection before viewing results.  
-
----
-
-## 5. Recommendation Results
+## 4. Recommendation Results
 
 ### Business Goal
 
@@ -94,7 +77,8 @@ Return relevant program options based on the user’s intake selections and help
 ### Acceptance Criteria
 
 • System returns program recommendations based on completed intake inputs.  
-• Results prioritize matches across selected priority risk factors, developmental timing, and prevention type.  
+• Results prioritize matches across selected domain, risk factor, and focus population.  
+• Additional spreadsheet metadata may be used to improve recommendation relevance.  
 • Each result displays the program name.  
 • Each result includes available context or summary information where source data supports it.  
 • Each result includes relevant match indicators where possible.  
@@ -103,7 +87,7 @@ Return relevant program options based on the user’s intake selections and help
 
 ---
 
-## 6. Navigation and Usability
+## 5. Navigation and Usability
 
 ### Business Goal
 
@@ -120,7 +104,7 @@ Make the intake flow simple enough for prevention professionals who may not know
 
 ---
 
-## 7. MVP Scope Boundaries
+## 6. MVP Scope Boundaries
 
 ### Business Goal
 
@@ -134,4 +118,5 @@ Protect the MVP from overbuilding while leaving room for future AI-assisted reco
 • MVP does not require RAG-enabled matching.  
 • MVP does not require advanced recommendation explanations.  
 • MVP must remain functional with partially structured source data.  
+• Additional spreadsheet fields may support recommendation logic without becoming user-facing inputs.  
 • Future AI or RAG capabilities should be treated as later-phase enhancements.
