@@ -4,7 +4,7 @@
 
 This document defines the functional and product requirements for the PTTC Discovery Tool MVP.
 
-The goal of the MVP is to provide a guided intake workflow that helps substance misuse prevention professionals identify relevant evidence-based prevention programs based on prevention needs, risk factors, developmental timing, and prevention type.
+The goal of the MVP is to provide a 3-step guided intake workflow that helps substance misuse prevention professionals identify relevant evidence-based prevention programs based on prevention context, specific risk factor needs, and focus population.
 
 ## Product Context
 
@@ -24,20 +24,21 @@ to:
 
 ## 1. Guided Intake Flow
 
-The system must provide a structured intake experience that guides users through the key inputs needed to support program discovery.
+The system must provide a structured 3-step intake experience that guides users through the highest-value inputs needed to support program discovery.
 
-The MVP intake flow must include:
+The approved MVP intake flow must include:
 
 1. Risk Factor Domain  
-2. Priority Risk Factors  
-3. Developmental Timing  
-4. Prevention Type  
+2. Risk Factor  
+3. Focus Population  
+
+Additional spreadsheet fields should support recommendation logic behind the scenes, without requiring users to manually filter every available program attribute.
 
 The intake flow should help users make selections without requiring deep prior knowledge of every available evidence-based program.
 
 ## 2. Risk Factor Domain Selection
 
-The system must allow users to select a broad risk factor domain before selecting specific priority risk factors.
+The system must allow users to select a broad risk factor domain before selecting a specific risk factor.
 
 Supported domains should include:
 
@@ -47,44 +48,37 @@ Supported domains should include:
 • Individual  
 • Peer  
 
-The selected domain should determine which priority risk factors are shown in the next step.
+The selected domain should determine which risk factor options are shown in the next step.
 
-## 3. Priority Risk Factor Selection
+## 3. Risk Factor Selection
 
-The system must display priority risk factor options based on the domain selected by the user.
+The system must display risk factor options based on the domain selected by the user.
 
-Users should be able to select up to three priority risk factors.
+The user should select the risk factor that best represents the prevention need they want to address.
 
-The system should prevent users from selecting more than three risk factors in the MVP flow.
+This requirement protects usability and recommendation quality by keeping the intake focused and preventing users from being overwhelmed by every available data field.
 
-This requirement protects usability and recommendation quality by keeping the intake focused.
+## 4. Focus Population Selection
 
-## 4. Developmental Timing Selection
-
-The system must allow users to identify the developmental timing or age range relevant to their prevention planning needs.
+The system must allow users to select the focus population relevant to their prevention planning needs.
 
 This input should help narrow recommendation logic and improve program fit.
 
-## 5. Prevention Type Selection
-
-The system must allow users to select the prevention type that best matches their intended intervention approach.
-
-This input should support more relevant filtering and recommendation outcomes.
-
-## 6. Recommendation Logic
+## 5. Recommendation Logic
 
 The system must use the intake inputs to return relevant program recommendations.
 
 MVP recommendation logic should prioritize:
 
-• Matching selected risk factors  
-• Supporting the selected developmental timing  
-• Supporting the selected prevention type  
+• Matching the selected risk factor domain  
+• Matching the selected risk factor  
+• Supporting the selected focus population  
+• Using additional spreadsheet metadata behind the scenes where available  
 • Returning programs that meet at least one meaningful match condition  
 
 The MVP should use structured intake inputs to improve relevance without overpromising advanced AI matching before the source data can support it reliably.
 
-## 7. Results Display
+## 6. Results Display
 
 The system must present recommended programs in a clear results view.
 
@@ -97,7 +91,7 @@ At minimum, the results view should support:
 • Brief program context or summary, where available  
 • Clear next step or review action  
 
-## 8. MVP Scope Control
+## 7. MVP Scope Control
 
 The MVP must focus on validating the guided intake workflow and basic recommendation structure.
 
@@ -134,7 +128,7 @@ The recommendation logic should be structured so future enhancements, including 
 
 ## Data Practicality
 
-Because existing source data is inconsistently structured, the MVP should rely on clear, controlled intake inputs rather than assuming all source data can support advanced matching immediately.
+Because existing source data is inconsistently structured, the MVP should rely on clear, controlled intake inputs and spreadsheet-supported metadata rather than assuming all source data can support advanced matching immediately.
 
 ## User Stories
 
@@ -146,19 +140,15 @@ As a prevention professional, I want to answer guided intake questions so I can 
 
 As a user, I want to select a broad risk factor domain so I can narrow the next set of options to the most relevant risk factors.
 
-## User Story 3: Priority Risk Factor Selection
+## User Story 3: Risk Factor Selection
 
-As a user, I want to select up to three priority risk factors so the system can recommend programs aligned with my focus areas.
+As a user, I want to select a specific risk factor so the system can recommend programs aligned with the prevention need I want to address.
 
-## User Story 4: Developmental Timing
+## User Story 4: Focus Population
 
-As a user, I want to identify the developmental timing relevant to my work so recommendations better match the population I am serving.
+As a user, I want to select a focus population so recommendations better match the group I am serving.
 
-## User Story 5: Prevention Type
-
-As a user, I want to select a prevention type so recommendations reflect the kind of intervention I am looking for.
-
-## User Story 6: Recommendation Results
+## User Story 5: Recommendation Results
 
 As a user, I want to see recommended programs in a clear results view so I can understand which options may be a good fit and why.
 
@@ -169,14 +159,16 @@ As a user, I want to see recommended programs in a clear results view so I can u
 • MVP must avoid advanced AI recommendation claims before validation  
 • Intake flow must remain simple enough for non-technical users  
 • Requirements must be clear enough for developer implementation  
+• Additional spreadsheet fields should support recommendation logic without becoming user-facing intake burden  
 
 ## Success Criteria
 
 The MVP should be considered successful if it:
 
-• Provides a clear guided intake experience  
+• Provides a clear 3-step guided intake experience  
 • Helps users move from broad prevention needs to more relevant program options  
 • Reduces reliance on manual program search  
+• Uses spreadsheet-supported metadata to improve output relevance  
 • Creates a foundation for future AI-assisted recommendation logic  
 • Gives developers clear requirements and acceptance criteria  
 • Protects MVP scope from unnecessary complexity
