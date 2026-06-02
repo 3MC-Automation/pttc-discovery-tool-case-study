@@ -90,6 +90,12 @@ This approach reduces cognitive load, improves usability, and helps prevention p
 
 ![PTTC Domain to Risk Factor Mapping](pttc-domain-risk-factor-mapping.png)
 
+### Intake Responses to Recommendations
+
+This diagram shows how the approved 3-step intake captures user responses and uses spreadsheet-supported metadata behind the scenes to generate relevant program recommendations.
+
+![PTTC Intake Responses to Recommendations](pttc-intake-responses-to-recommendations.png)
+
 ## 🔮 Future Scope
 
 Future enhancements may include:
@@ -134,6 +140,7 @@ Current documentation structure:
 • `/docs/requirements.md`  
 • `/docs/acceptance-criteria.md`  
 • `pttc-domain-risk-factor-mapping.png`  
+• `pttc-intake-responses-to-recommendations.png`  
 
 ## ✅ Outcome
 
