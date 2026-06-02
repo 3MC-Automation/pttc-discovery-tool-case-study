@@ -80,6 +80,16 @@ Additional spreadsheet fields were used behind the scenes to support recommendat
 
 The goal was not to overbuild the first version. The MVP needed to prove the intake logic, user flow, and recommendation structure before expanding into more advanced features.
 
+## 📊 Product Logic Diagrams
+
+### Domain to Risk Factor Mapping
+
+The approved MVP uses a guided intake process where the selected Risk Factor Domain determines which Risk Factor options are presented to the user.
+
+This approach reduces cognitive load, improves usability, and helps prevention professionals navigate large program datasets more efficiently.
+
+![PTTC Domain to Risk Factor Mapping](pttc-domain-risk-factor-mapping.png)
+
 ## 🔮 Future Scope
 
 Future enhancements may include:
@@ -123,7 +133,7 @@ Current documentation structure:
 • `README.md`  
 • `/docs/requirements.md`  
 • `/docs/acceptance-criteria.md`  
-• `/assets/diagrams/`  
+• `pttc-domain-risk-factor-mapping.png`  
 
 ## ✅ Outcome
 
