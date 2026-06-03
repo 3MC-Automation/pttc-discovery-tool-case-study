@@ -1,14 +1,14 @@
-# Requirements: PTTC Discovery Tool
+# Requirements: Evidence-Based Program Discovery Workflow
 
 ## Purpose
 
-This document defines the functional and product requirements for the PTTC Discovery Tool MVP.
+This document defines the functional and product requirements for the evidence-based program discovery workflow MVP.
 
 The goal of the MVP is to provide a 3-step guided intake workflow that helps substance misuse prevention professionals identify relevant evidence-based prevention programs based on prevention context, specific risk factor needs, and focus population.
 
 ## Product Context
 
-The PTTC Discovery Tool supports a prevention technology initiative connected to the SAMHSA-funded Prevention Technology Transfer Center Network.
+The evidence-based program discovery workflow supports a generalized prevention technology workflow.
 
 Existing program data sources were not consistently structured. Some sources included partial program information, while the most complete database functioned more like a static repository than a decision-support tool. It contained program information, but did not guide users toward the best-fit programs for their specific needs.
 

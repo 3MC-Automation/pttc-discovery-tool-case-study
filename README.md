@@ -1,10 +1,12 @@
-# 🧭 PTTC Discovery Tool Case Study
+# 🧭 Evidence-Based Program Discovery Workflow Case Study
 
 ## Overview
 
-The PTTC Discovery Tool is a guided intake and recommendation workflow designed to help substance misuse prevention professionals identify relevant evidence-based prevention programs based on risk factor domain, specific risk factor needs, and focus population.
+The evidence-based program discovery workflow is a guided intake and recommendation workflow designed to help substance misuse prevention professionals identify relevant evidence-based prevention programs based on risk factor domain, specific risk factor needs, and focus population.
 
-This case study documents my product ownership work for a prevention technology initiative connected to the SAMHSA-funded Prevention Technology Transfer Center Network. My work focused on intake flow design, MVP scope control, requirements definition, acceptance criteria, and developer-ready implementation planning.
+This case study documents my product ownership work for a generalized prevention technology workflow. My work focused on intake flow design, MVP scope control, requirements definition, acceptance criteria, and developer-ready implementation planning.
+
+This repository is a public portfolio case study based on a generalized prevention technology workflow. It has been adapted to remove client-identifying details and does not include private client data, credentials, production secrets, proprietary records, or stakeholder names.
 
 ## 🧩 Problem
 
@@ -22,7 +24,7 @@ The product challenge was to turn complex prevention knowledge into a guided dig
 
 ## 💡 Why This Matters
 
-The Prevention Technology Transfer Center Network supports the substance misuse prevention field by sharing tools, training, technical assistance, and prevention science resources.
+Prevention technology workflows support the substance misuse prevention field by helping teams organize tools, training, technical assistance, and prevention science resources into clearer decision pathways.
 
 A better discovery workflow helps prevention professionals:
 
@@ -88,12 +90,14 @@ The approved MVP uses a guided intake process where the selected Risk Factor Dom
 
 This approach reduces cognitive load, improves usability, and helps prevention professionals navigate large program datasets more efficiently.
 
+![Domain to Risk Factor Mapping](pttc-domain-risk-factor-mapping.png)
 ![PTTC Domain to Risk Factor Mapping](domain-risk-factor-mapping.png)
 
 ### Intake Responses to Recommendations
 
 This diagram shows how the approved 3-step intake captures user responses and uses spreadsheet-supported metadata behind the scenes to generate relevant program recommendations.
 
+![Intake Responses to Recommendations](pttc-intake-responses-to-recommendations.png)
 ![PTTC Intake Responses to Recommendations](intake-responses-to-recommendations.png)
 
 ## 🔮 Future Scope
@@ -132,7 +136,7 @@ The workflow needed to guide users through complex prevention concepts without o
 
 ## 📁 Repository Contents
 
-This repository is a public portfolio case study and does not include private client data, credentials, production code, or proprietary records.
+This repository is a public portfolio case study based on a generalized prevention technology workflow. It has been adapted to remove client-identifying details and does not include private client data, credentials, production secrets, proprietary records, or stakeholder names.
 
 Current documentation structure:
 
