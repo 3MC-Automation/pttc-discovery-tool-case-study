@@ -1,8 +1,8 @@
-# Acceptance Criteria: PTTC Discovery Tool
+# Acceptance Criteria: Evidence-Based Program Discovery Workflow
 
 ## Purpose
 
-This document defines acceptance criteria for the approved PTTC Discovery Tool MVP.
+This document defines acceptance criteria for the approved evidence-based program discovery workflow MVP.
 
 The initial intake concept was built to help a non-technical stakeholder group visualize what a guided program discovery tool could do. After stakeholder review and refinement, the approved MVP evolved into a 3-step intake workflow focused on Risk Factor Domain, Risk Factor, and Focus Population.
 
