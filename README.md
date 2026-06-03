@@ -91,12 +91,14 @@ The approved MVP uses a guided intake process where the selected Risk Factor Dom
 This approach reduces cognitive load, improves usability, and helps prevention professionals navigate large program datasets more efficiently.
 
 ![Domain to Risk Factor Mapping](pttc-domain-risk-factor-mapping.png)
+![PTTC Domain to Risk Factor Mapping](domain-risk-factor-mapping.png)
 
 ### Intake Responses to Recommendations
 
 This diagram shows how the approved 3-step intake captures user responses and uses spreadsheet-supported metadata behind the scenes to generate relevant program recommendations.
 
 ![Intake Responses to Recommendations](pttc-intake-responses-to-recommendations.png)
+![PTTC Intake Responses to Recommendations](intake-responses-to-recommendations.png)
 
 ## 🔮 Future Scope
 
@@ -141,8 +143,8 @@ Current documentation structure:
 • `README.md`  
 • `/docs/requirements.md`  
 • `/docs/acceptance-criteria.md`  
-• `pttc-domain-risk-factor-mapping.png`  
-• `pttc-intake-responses-to-recommendations.png`  
+• `domain-risk-factor-mapping.png`  
+• `intake-responses-to-recommendations.png`  
 
 ## ✅ Outcome
 
